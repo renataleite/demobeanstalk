@@ -28,8 +28,7 @@ jobs:
       
     - name: Zip Package
       run: 
-        cd ${{github.workspace}}/out
-        zip -r ${{github.workspace}}/out.zip *
+        cd /home/runner/work/demobeanstalk/demobeanstalk/out ; zip -r /home/runner/work/demobeanstalk/demobeanstalk/out.zip *
         
     - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v13
